@@ -1,8 +1,7 @@
 @use 'variaveis';
 
 .header{
-    background-color: variaveis.$corBodyHeader;
-
+    background: linear-gradient(90deg,rgba(5, 118, 165, 1) 0%, rgba(5, 120, 167, 1) 47%, rgba(10, 116, 163, 1) 100%);
 
         &__container{
             display: grid;
