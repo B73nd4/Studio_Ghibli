@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'header';
 @use 'hero';
+@use 'shows';
 
 *{
     padding: 0;
@@ -13,3 +14,8 @@
     font-size: $fontSize;
 }
 
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
