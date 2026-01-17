@@ -1,0 +1,15 @@
+
+.backstage{
+
+    &__container{
+        padding: 2vw 5.6vw;
+        background-color: #29973b;
+        min-height: 80vh;
+
+        &__imgs{
+            img{
+                border-radius: 100%;
+            }
+        }
+    }
+}
