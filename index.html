@@ -18,7 +18,7 @@
                     <a href="#hero">Sobre</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#">Filmes</a>
+                    <a href="#shows">Filmes</a>
                 </li>
                 <li class="header__links__item">
                     <a href="#">Bastidores</a>
@@ -41,67 +41,112 @@
                         fundado em 1985,famoso por filmes de arte com narrativas poéticas e visuais deslumbrantes, 
                         como A Viagem de Chihiro e Meu Amigo Totoro.
                     </p>
-                        
+                    <a class="button" href="#backstage">
+                        <button>saiba mais</button>
+                    </a>
                 </div>
                 <img src="/dist/images/about.hero.png" alt="">
             </div>
 
         </div>
     </section>
-    <section class="shows">
+    <section class="shows" id="shows">
         <nav class="shows__tabs">
-            <button class="shows__tabs__button shows__tabs__button--is--active">
+            <button data-tab-button="movies" class="shows__tabs__button shows__tabs__button--is--active">
                 Filmes
             </button>
-            <button class="shows__tabs__button">
+            <button data-tab-button="docs" class="shows__tabs__button">
                 Documentário
             </button>
-            <button class="shows__tabs__button">
+            <button data-tab-button="books" class="shows__tabs__button">
                 Livros
             </button>
         </nav>
-        <ul class="shows__list">
+        <ul data-tab-id="movies" class="shows__list shows__list--is--active">
             <li class="shows__list__item">
-                <img src="/dist/images/productions/movies/viagem.png" alt="Chihiro">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiztNqfkYqSAxU0LbkGHTFnDgIQFnoECE4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60023642&usg=AOvVaw2sgadLAjk2UK5iQFJasThb&opi=89978449" target="_blank">
+                    <img src="/dist/images/productions/movies/viagem.png"  alt="Chihiro">
+                </a>
+                <h3>Viagem de Chihiro</h3>
             </li>
             <li class="shows__list__item">
-                <img src="/dist/images/productions/movies/castelo.png" alt="Castelo Animado">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_heabkoqSAxX4gGEGHQoXM-sQFnoECG4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F70028883&usg=AOvVaw26LB7UpktFE2N8ES_o4QgY&opi=89978449" target="_blank">
+                    <img src="/dist/images/productions/movies/castelo.png" alt="Castelo Animado">
+                </a>
+                <h3>Castelo Animado</h3>
             </li>
             <li class="shows__list__item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiv7eu5koqSAxUkLrkGHS9HKEAQFnoECEQQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F28630857&usg=AOvVaw1E_2IBobQxWVQFVcy8Oisa&opi=89978449" target="_blank">
                 <img src="/dist/images/productions/movies/mononoke.png" alt="Mononoke">
+                </a>
+                <h3>Pricesa Mononoke</h3>
             </li>
             <li class="shows__list__item">
-                <img src="/dist/images/productions/movies/totoro.png" alt="Totoro">
-            </li>
-        </ul>
-        <ul class="shows__list"> 
-            <li class="shows__list__item">
-                <img src="/dist/images/productions/docs/o_reino_dos_sonhos.png" alt="o reino dos sonhos de das sombras">
-            </li>
-            <li class="shows__list__item">
-                <img src="/dist/images/productions/docs/sinfonia_studio_ghibli.png" alt="simfonia das musicas do studio ghibli">
-            </li>
-            <li class="shows__list__item">
-                <img src="/dist/images/productions/docs/Miyazaki_e_a_garça.png" alt="Hayao Miyazaki e a garça">
-            </li>
-            <li class="shows__list__item">
-                <img src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png" alt="isao Takahata e a pricessa kaguya">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiXjdCek4qSAxUbP7kGHXvaCasQFnoFCJMBEAE&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60032294&usg=AOvVaw3Iw8ttQs9p_zjmcXee4IEs&opi=89978449" target="_blank">
+                    <img src="/dist/images/productions/movies/totoro.png" alt="Totoro">
+                </a>
+                <H3>Meu Vizinho Totoro</H3>
             </li>
         </ul>
-        <ul class="shows__list">
+        <ul data-tab-id="docs" class="shows__list"> 
             <li class="shows__list__item">
-                <img src="/dist/images/productions/books/meu_vizinho_totoro.png" alt="Meu vizinho Totoro">
+                <a href="https://youtu.be/Mx8LuiJ30os" target="_blank">
+                    <img src="/dist/images/productions/docs/o_reino_dos_sonhos.png" alt="o reino dos sonhos de das sombras">
+                </a>
+                <h3>O reino dos sonhos de e da loucura</h3>
             </li>
             <li class="shows__list__item">
-                <img src="/dist/images/productions/books/jornada_de_Shuna.png" alt="A jornada de Shuna">
+                <a href="https://youtu.be/eKC3_9gRrOI?si=x9ql211KzOouffa3" target="_blank">
+                    <img src="/dist/images/productions/docs/sinfonia_studio_ghibli.png" alt="simfonia das musicas do studio ghibli">
+                </a>
+                <h3>Sinfonia das músicas do studio ghibli</h3>
             </li>
             <li class="shows__list__item">
-                <img src="/dist/images/productions/books/castelo_animado.png" alt="Castelo Animado">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjP2tTZlIqSAxUCr5UCHSRpFEYQFnoECCkQAQ&url=https%3A%2F%2Fwww.netflix.com%2Fpt%2Ftitle%2F81946538&usg=AOvVaw2pXbT_8rxSWNx6HFXNh-NN&opi=89978449" target="_blank">
+                    <img src="/dist/images/productions/docs/Miyazaki_e_a_garça.png" alt="Hayao Miyazaki e a garça">
+                </a>
+                <h3>Hayao Miyazaki e a garça</h3>
             </li>
             <li class="shows__list__item">
-                <img src="/dist/images/productions/books/Aya_e_a_bruxa.png" alt="Aya e a bruxa">
+                <a href="https://youtu.be/BX-quaGoU-0" target="_blank">
+                    <img src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png" alt="Isao Takahata e a pricessa kaguya">
+                </a>
+                <h3>Isao Takahata e a pricessa kaguya</h3>
+            </li>
+        </ul>
+        <ul data-tab-id="books" class="shows__list">
+            <li class="shows__list__item">
+                <a href="https://a.co/d/aH4LwwF" target="_blank">
+                    <img src="/dist/images/productions/books/meu_vizinho_totoro.png" alt="Meu vizinho Totoro">
+                </a>
+                <h3>Meu vizinho Totoro</h3>
+            </li>
+            <li class="shows__list__item">
+                <a href="https://a.co/d/dccVS58" target="_blank">
+                    <img src="/dist/images/productions/books/jornada_de_Shuna.png" alt="A jornada de Shuna">
+                </a>
+                <h3>A jornada de Shuna</h3>
+            </li>
+            <li class="shows__list__item">
+                <a href="https://a.co/d/2IVzckF" target="_blank">
+                    <img src="/dist/images/productions/books/castelo_animado.png" alt="Castelo Animado">
+                </a>
+                <h3>Castelo Animado</h3>
+            </li>
+            <li class="shows__list__item">
+                <a href="https://japanese-creative-books.com/product/illustration/the-art-of-earwig-and-the-witch/" target="_blank">
+                    <img src="/dist/images/productions/books/Aya_e_a_bruxa.png" alt="Aya e a bruxa">
+                </a>
+                <h3>Aya e a bruxa</h3>
             </li>
         </ul>
     </section>
+    <section id="backstage">
+        <p>
+            lor
+        </p>
+    </section>
+
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
