@@ -1,196 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>スタジオジブリ | Studio Ghibli</title>
-    <link rel="shortcut icon" href="/dist/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/dist/css/main.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="/dist/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=menu"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <h1>
-                <img class="header__logo" src="/dist/images/logo.png.png" alt="logo do Studio Ghibli">
-            </h1>
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a href="#hero">Sobre</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#shows">Filmes</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#backstage">Bastidores</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#contact">Contato</a>
-                </li>
-            </ul>
-        </div>
+      <div class="header__container">
+        <h1>
+          <img
+            id="logo"
+            class="header__logo"
+            src="/dist/images/logo.png.png"
+            alt="logo do Studio Ghibli"
+          />
+        </h1>
+        <span id="burguer" class="material-symbols-outlined"> menu </span>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#hero">Sobre</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#shows">Filmes</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#backstage">Bastidores</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="hero" id="hero">
-        <div class="hero__container">
-            <div class="hero__container__about">
-                <div class="hero__container__about__history">
-                    <p>
-                        Studio Ghibli é um renomado estúdio de animação japonês, 
-                fundado em 1985, famoso por filmes de arte com narrativas poéticas e visuais deslumbrantes, 
-                como A Viagem de Chihiro e Meu Amigo Totoro.
-                O Studio Ghibli é um renomado estúdio de animação japonês, 
-                        fundado em 1985,famoso por filmes de arte com narrativas poéticas e visuais deslumbrantes, 
-                        como A Viagem de Chihiro e Meu Amigo Totoro.
-                    </p>
-                        <a class="button" href="#backstage">
-                            <button>saiba mais aqui</button>
-                        </a>
-                </div>
-                <img src="/dist/images/about.hero.png" alt="">
-            </div>
-
+      <div class="hero__content">
+        <div class="hero__content__text">
+          <h3>“O quente vento do deserto do Saara”</h3>
+          <p>
+            Para muitos, essa frase pode não fazer sentido algum, mas para Hayao
+            Miyazaki, esse vento que se chama Ghibli seria aquele mudaria para
+            sempre a história da animação mundial.
+          </p>
+          <p>
+            O Studio Ghibli é um renomado estúdio de animação japonês, fundado
+            em 1985, famoso por filmes de arte com narrativas poéticas e visuais
+            deslumbrantes, como A Viagem de Chihiro e Meu Amigo Totoro.
+          </p>
+          <a href="#backstage"><button>saiba mais aqui</button></a>
         </div>
+        <img src="/dist/images/back-hero.png" alt="" />
+      </div>
     </section>
     <section class="shows" id="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="movies" class="shows__tabs__button shows__tabs__button--is--active">
-                Filmes
-            </button>
-            <button data-tab-button="docs" class="shows__tabs__button">
-                Documentário
-            </button>
-            <button data-tab-button="books" class="shows__tabs__button">
-                Livros
-            </button>
-        </nav>
-        <ul data-tab-id="movies" class="shows__list shows__list--is--active">
-            <li class="shows__list__item">
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiztNqfkYqSAxU0LbkGHTFnDgIQFnoECE4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60023642&usg=AOvVaw2sgadLAjk2UK5iQFJasThb&opi=89978449" target="_blank">
-                    <img src="/dist/images/productions/movies/viagem.png"  alt="Chihiro">
-                </a>
-                <h3>Viagem de Chihiro</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_heabkoqSAxX4gGEGHQoXM-sQFnoECG4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F70028883&usg=AOvVaw26LB7UpktFE2N8ES_o4QgY&opi=89978449" target="_blank">
-                    <img src="/dist/images/productions/movies/castelo.png" alt="Castelo Animado">
-                </a>
-                <h3>Castelo Animado</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiv7eu5koqSAxUkLrkGHS9HKEAQFnoECEQQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F28630857&usg=AOvVaw1E_2IBobQxWVQFVcy8Oisa&opi=89978449" target="_blank">
-                <img src="/dist/images/productions/movies/mononoke.png" alt="Mononoke">
-                </a>
-                <h3>Pricesa Mononoke</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiXjdCek4qSAxUbP7kGHXvaCasQFnoFCJMBEAE&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60032294&usg=AOvVaw3Iw8ttQs9p_zjmcXee4IEs&opi=89978449" target="_blank">
-                    <img src="/dist/images/productions/movies/totoro.png" alt="Totoro">
-                </a>
-                <H3>Meu Vizinho Totoro</H3>
-            </li>
-        </ul>
-        <ul data-tab-id="docs" class="shows__list"> 
-            <li class="shows__list__item">
-                <a href="https://youtu.be/Mx8LuiJ30os" target="_blank">
-                    <img src="/dist/images/productions/docs/o_reino_dos_sonhos.png" alt="o reino dos sonhos de das sombras">
-                </a>
-                <h3>O reino dos sonhos de e da loucura</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://youtu.be/eKC3_9gRrOI?si=x9ql211KzOouffa3" target="_blank">
-                    <img src="/dist/images/productions/docs/sinfonia_studio_ghibli.png" alt="simfonia das musicas do studio ghibli">
-                </a>
-                <h3>Sinfonia das músicas do studio ghibli</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjP2tTZlIqSAxUCr5UCHSRpFEYQFnoECCkQAQ&url=https%3A%2F%2Fwww.netflix.com%2Fpt%2Ftitle%2F81946538&usg=AOvVaw2pXbT_8rxSWNx6HFXNh-NN&opi=89978449" target="_blank">
-                    <img src="/dist/images/productions/docs/Miyazaki_e_a_garça.png" alt="Hayao Miyazaki e a garça">
-                </a>
-                <h3>Hayao Miyazaki e a garça</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://youtu.be/BX-quaGoU-0" target="_blank">
-                    <img src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png" alt="Isao Takahata e a pricessa kaguya">
-                </a>
-                <h3>Isao Takahata e a pricessa kaguya</h3>
-            </li>
-        </ul>
-        <ul data-tab-id="books" class="shows__list">
-            <li class="shows__list__item">
-                <a href="https://a.co/d/aH4LwwF" target="_blank">
-                    <img src="/dist/images/productions/books/meu_vizinho_totoro.png" alt="Meu vizinho Totoro">
-                </a>
-                <h3>Meu vizinho Totoro</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://a.co/d/dccVS58" target="_blank">
-                    <img src="/dist/images/productions/books/jornada_de_Shuna.png" alt="A jornada de Shuna">
-                </a>
-                <h3>A jornada de Shuna</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://a.co/d/2IVzckF" target="_blank">
-                    <img src="/dist/images/productions/books/castelo_animado.png" alt="Castelo Animado">
-                </a>
-                <h3>Castelo Animado</h3>
-            </li>
-            <li class="shows__list__item">
-                <a href="https://japanese-creative-books.com/product/illustration/the-art-of-earwig-and-the-witch/" target="_blank">
-                    <img src="/dist/images/productions/books/Aya_e_a_bruxa.png" alt="Aya e a bruxa">
-                </a>
-                <h3>Aya e a bruxa</h3>
-            </li>
-        </ul>
+      <nav class="shows__tabs">
+        <button
+          data-tab-button="movies"
+          class="shows__tabs__button shows__tabs__button--is--active"
+        >
+          Filmes
+        </button>
+        <button data-tab-button="docs" class="shows__tabs__button">
+          Documentário
+        </button>
+        <button data-tab-button="books" class="shows__tabs__button">
+          Livros
+        </button>
+      </nav>
+      <ul data-tab-id="movies" class="shows__list shows__list--is--active">
+        <li class="shows__list__item">
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiztNqfkYqSAxU0LbkGHTFnDgIQFnoECE4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60023642&usg=AOvVaw2sgadLAjk2UK5iQFJasThb&opi=89978449"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/movies/viagem.png"
+              alt="Chihiro"
+            />
+          </a>
+          <h3>Viagem de Chihiro</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_heabkoqSAxX4gGEGHQoXM-sQFnoECG4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F70028883&usg=AOvVaw26LB7UpktFE2N8ES_o4QgY&opi=89978449"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/movies/castelo.png"
+              alt="Castelo Animado"
+            />
+          </a>
+          <h3>Castelo Animado</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiv7eu5koqSAxUkLrkGHS9HKEAQFnoECEQQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F28630857&usg=AOvVaw1E_2IBobQxWVQFVcy8Oisa&opi=89978449"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/movies/mononoke.png"
+              alt="Mononoke"
+            />
+          </a>
+          <h3>Pricesa Mononoke</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiXjdCek4qSAxUbP7kGHXvaCasQFnoFCJMBEAE&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60032294&usg=AOvVaw3Iw8ttQs9p_zjmcXee4IEs&opi=89978449"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/movies/totoro.png"
+              alt="Totoro"
+            />
+          </a>
+          <h3>Meu Vizinho Totoro</h3>
+        </li>
+      </ul>
+      <ul data-tab-id="docs" class="shows__list">
+        <li class="shows__list__item">
+          <a href="https://youtu.be/Mx8LuiJ30os" target="_blank">
+            <img
+              src="/dist/images/productions/docs/o_reino_dos_sonhos.png"
+              alt="o reino dos sonhos de das sombras"
+            />
+          </a>
+          <h3>O reino dos sonhos de e da loucura</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://youtu.be/eKC3_9gRrOI?si=x9ql211KzOouffa3"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/docs/sinfonia_studio_ghibli.png"
+              alt="simfonia das musicas do studio ghibli"
+            />
+          </a>
+          <h3>Sinfonia das músicas do studio ghibli</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjP2tTZlIqSAxUCr5UCHSRpFEYQFnoECCkQAQ&url=https%3A%2F%2Fwww.netflix.com%2Fpt%2Ftitle%2F81946538&usg=AOvVaw2pXbT_8rxSWNx6HFXNh-NN&opi=89978449"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/docs/Miyazaki_e_a_garça.png"
+              alt="Hayao Miyazaki e a garça"
+            />
+          </a>
+          <h3>Hayao Miyazaki e a garça</h3>
+        </li>
+        <li class="shows__list__item">
+          <a href="https://youtu.be/BX-quaGoU-0" target="_blank">
+            <img
+              src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png"
+              alt="Isao Takahata e a pricessa kaguya"
+            />
+          </a>
+          <h3>Isao Takahata e a pricessa kaguya</h3>
+        </li>
+      </ul>
+      <ul data-tab-id="books" class="shows__list">
+        <li class="shows__list__item">
+          <a href="https://a.co/d/aH4LwwF" target="_blank">
+            <img
+              src="/dist/images/productions/books/meu_vizinho_totoro.png"
+              alt="Meu vizinho Totoro"
+            />
+          </a>
+          <h3>Meu vizinho Totoro</h3>
+        </li>
+        <li class="shows__list__item">
+          <a href="https://a.co/d/dccVS58" target="_blank">
+            <img
+              src="/dist/images/productions/books/jornada_de_Shuna.png"
+              alt="A jornada de Shuna"
+            />
+          </a>
+          <h3>A jornada de Shuna</h3>
+        </li>
+        <li class="shows__list__item">
+          <a href="https://a.co/d/2IVzckF" target="_blank">
+            <img
+              src="/dist/images/productions/books/castelo_animado.png"
+              alt="Castelo Animado"
+            />
+          </a>
+          <h3>Castelo Animado</h3>
+        </li>
+        <li class="shows__list__item">
+          <a
+            href="https://japanese-creative-books.com/product/illustration/the-art-of-earwig-and-the-witch/"
+            target="_blank"
+          >
+            <img
+              src="/dist/images/productions/books/Aya_e_a_bruxa.png"
+              alt="Aya e a bruxa"
+            />
+          </a>
+          <h3>Aya e a bruxa</h3>
+        </li>
+      </ul>
     </section>
     <section class="backstage" id="backstage">
-        <div class="backstage__container">
-            <h2>Backstory</h2>
-            <p>O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata, 
-                Toshio Suzuki e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do Vale do Vento, 
-                no ano anterior. O estúdio lançou seu primeiro filme, O Castelo no Céu, no ano seguinte. 
-                O logotipo da empresa é o Totoro, o personagem do filme Meu Amigo Totoro, lançado em 1988.
-                Com exceção de sete produções, todos os filmes do estúdio foram dirigidos por Hayao Miyazaki e 
-                Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, 
-                o Museu Ghibli, um museu dedicado as obras do estúdio, foi inaugurado.
-            </p>
+      <div class="backstage__container">
+        <h2>Backstory</h2>
+        <p>
+          O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata,
+          Toshio Suzuki e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do
+          Vale do Vento, no ano anterior. O estúdio lançou seu primeiro filme, O
+          Castelo no Céu, no ano seguinte. O logotipo da empresa é o Totoro, o
+          personagem do filme Meu Amigo Totoro, lançado em 1988. Com exceção de
+          sete produções, todos os filmes do estúdio foram dirigidos por Hayao
+          Miyazaki e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da
+          maioria deles. Em 2001, o Museu Ghibli, um museu dedicado as obras do
+          estúdio, foi inaugurado.
+        </p>
 
-                <br>
+        <br />
 
-                <p>
-                    “Sempre que alguém cria algo com todo o seu coração, então essa criação recebe uma alma.”
-                </p>
+        <p>
+          “Sempre que alguém cria algo com todo o seu coração, então essa
+          criação recebe uma alma.”
+        </p>
 
-                <h2>Direitores</h2>
-                <div class="backstage__container__imgs">
-                    <img src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/hayao-miyazaki.png?resize=300%2C186&ssl=1" alt="">
-                    <img src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/yoshifumi-kondo-.png?resize=300%2C186&ssl=1" alt="">
-                    <img src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/isao-takahata.png?resize=300%2C186&ssl=1" alt="">
-                </div>
-
-                <br>
-
-                <h2>Premiações</h2>
-
+        <h2>Direitores</h2>
+        <div class="backstage__container__imgs">
+          <img
+            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/hayao-miyazaki.png?resize=300%2C186&ssl=1"
+            alt=""
+          />
+          <img
+            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/yoshifumi-kondo-.png?resize=300%2C186&ssl=1"
+            alt=""
+          />
+          <img
+            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/isao-takahata.png?resize=300%2C186&ssl=1"
+            alt=""
+          />
         </div>
+
+        <br />
+
+        <h2>Premiações</h2>
+      </div>
     </section>
-    <section class="contact" id="contact">
-    </section>
+    <section class="contact" id="contact"></section>
     <footer class="footer" id="footer">
-        <div class="footer__container">
-            <div class="footer__container__div">
-                <div class="footer__container__div__form">
-                    <h3>Assine e receba novidades:</h3>
-                    <form>
-                        <label for="inputname"></label>
-                        <input type="text" id="inputname" placeholder="Seu nome" required>
-                    </form>
-                </div>
-                <div class="footer__container__div__">
-
-                </div>
-            </div>
+      <div class="footer__container">
+        <div class="footer__container__div">
+          <div class="footer__container__div__form">
+            <h3>Assine e receba novidades:</h3>
+            <form>
+              <label for="inputname"></label>
+              <input
+                type="text"
+                id="inputname"
+                placeholder="Seu nome"
+                required
+              />
+            </form>
+          </div>
+          <div class="footer__container__div__"></div>
         </div>
+      </div>
     </footer>
 
     <script src="./dist/js/main.js"></script>
-</body>
+  </body>
 </html>

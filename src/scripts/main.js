@@ -1,32 +1,54 @@
-        document.addEventListener('DOMContentLoaded', function(){
-            const buttons = document.querySelectorAll('[data-tab-button]');
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('[data-tab-button]');
 
-            //seção programação das abas
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].addEventListener('click', function(botao){
-                    const abaAlvo = botao.target.dataset.tabButton;
-                    const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
-                    esconderTodasAbas();
-                    aba.classList.add('shows__list--is--active');
-                    removeBotaoAtivo();
-                    botao.target.classList.add('shows__tabs__button--is--active');
-                })
-            }
+    const burguer = document.getElementById('burguer');
+    const menu = document.querySelector('.header__links');
 
-            function removeBotaoAtivo(){
-                const buttons = document.querySelectorAll('[data-tab-button]');
+    burguer.addEventListener("click", () => {
+        menu.classList.toggle('header__links--is--open');
+    } )
+    
 
-                for (let i = 0; i < buttons.length; i++) {
-                    buttons[i].classList.remove('shows__tabs__button--is--active');
-                }
-            }
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector('.header')
 
-            function esconderTodasAbas() {
-                const tabsContainer = document.querySelectorAll('[data-tab-id]');
+        if (window.scrollY > 80) {
+            header.classList.add('header--is--sticky');
+        } else {
+            header.classList.remove('header--is--sticky');
+        }
+    })
 
-                for (let i = 0; i < tabsContainer.length; i++) {
-                    tabsContainer[i].classList.remove('shows__list--is--active')
-                    
-                }
-            }
+
+    //secction programação das abas
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function (botao) {
+            const abaAlvo = botao.target.dataset.tabButton;
+            const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
+            esconderTodasAbas();
+            aba.classList.add('shows__list--is--active');
+            removeBotaoAtivo();
+            botao.target.classList.add('shows__tabs__button--is--active');
         })
+    }
+
+    function removeBotaoAtivo() {
+        const buttons = document.querySelectorAll('[data-tab-button]');
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('shows__tabs__button--is--active');
+        }
+    }
+
+    function esconderTodasAbas() {
+        const tabsContainer = document.querySelectorAll('[data-tab-id]');
+
+        for (let i = 0; i < tabsContainer.length; i++) {
+            tabsContainer[i].classList.remove('shows__list--is--active')
+
+        }
+    }
+
+
+
+})
