@@ -18,7 +18,12 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            @media (max-width: 768px) {
+            flex-direction: column;
         }
+        }
+
+        
 
         .header__links {
             font-size: 16px;
@@ -77,6 +82,8 @@
         font-size: 18px;
         background-color: variaveis.$corHeaderLinks;
         transition: background-color .3s;
+        position: relative;
+
 
         &__item {
             margin: auto 10px;
@@ -86,6 +93,26 @@
                 border-radius: 5px;
                 color: black;
                 text-decoration: none;
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    bottom: 30%;
+                    width: 0;
+                    height: 2px;
+                    background-color: black;
+                    transition: width .3s ease;
+                }
+
+                &:hover::after {
+                    width: 90%;
+                }
+
+                &:active::after{
+                    height: 3px;
+                }
             }
         }
     }

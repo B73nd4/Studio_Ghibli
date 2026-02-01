@@ -1,5 +1,23 @@
-.footer{
-    padding: 26px 8px;
+@use 'variaveis';
 
+.contact{
+    &__container{
+        display: block;
 
+        &__methods{
+            display: flex;
+
+            &__form{
+                padding: 16px;
+
+                p{
+                    font-size: 12px;
+                }
+
+                form{
+                    width: 50%;
+                }
+            }
+        }
+    }
 }

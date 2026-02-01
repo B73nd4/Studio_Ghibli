@@ -5,36 +5,73 @@
 @use 'backstage';
 @use 'footer';
 
-@font-face  {
-    font-family: Lemon Milk;
+@font-face {
+    font-family: Lemon Milk Light;
     src: url(../../assets/fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+    font-family: Lemon Milk LItalic;
+    src: url(../../assets/fonts/LEMONMILK-LightItalic.otf);
 }
 
 @font-face {
     font-family: Lemon Milk;
     src: url(../../assets/fonts/LEMONMILK-Regular.otf);
-    font-size: 400;
+    font-weight: 400;
 }
 
-*{
+@font-face {
+    font-family: Lemon Milk Bold;
+    src: url(../../assets/fonts/LEMONMILK-Bold.otf);
+    font-weight: bold;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: Lemon Milk, sans-serif;
+}
+
+body {
+    font-family: Lemon Milk Light, sans-serif;
 }
 
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button {
+    padding: 10px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: variaveis.$fontPrincipal2;
+    background-color: #615D7D;
+
+    a{
+        color: black;
+    }
+
+    &:hover {
+        background-color: variaveis.$corBodyHeader;
+    }
+
+    &:active {
+        background-color: #59528A;
+    }
 }
 
 h2 {
     justify-content: center;
     display: flex;
-    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: variaveis.$fontPrincipal2;
 }
 
+
+p {
+    font-family: variaveis.$fontSecundaria;
+    font-size: 19px;
+    margin-bottom: 5px;
+}

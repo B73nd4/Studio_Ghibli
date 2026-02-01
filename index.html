@@ -9,16 +9,24 @@
       href="/dist/images/favicon.ico"
       type="image/x-icon"
     />
+    <!-- área das fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=menu"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=star"
+    />
+
+    <!-- --- -->
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
   <body>
@@ -38,7 +46,7 @@
             <a href="#hero">Sobre</a>
           </li>
           <li class="header__links__item">
-            <a href="#shows">Filmes</a>
+            <a href="#shows">Cinematografia</a>
           </li>
           <li class="header__links__item">
             <a href="#backstage">Bastidores</a>
@@ -52,7 +60,7 @@
     <section class="hero" id="hero">
       <div class="hero__content">
         <div class="hero__content__text">
-          <h3>“O quente vento do deserto do Saara”</h3>
+          <h2>“O quente vento do deserto do Saara”</h2>
           <p>
             Para muitos, essa frase pode não fazer sentido algum, mas para Hayao
             Miyazaki, esse vento que se chama Ghibli seria aquele mudaria para
@@ -64,7 +72,9 @@
             deslumbrantes, como A Viagem de Chihiro e Meu Amigo Totoro.
           </p>
           <div class="hero__content__text__button">
-            <a  href="#backstage"><button>saiba mais aqui</button></a>
+            <a href="#backstage"
+              ><button class="button">saiba mais aqui</button></a
+            >
           </div>
         </div>
         <img src="/dist/images/back-hero.png" alt="" />
@@ -87,125 +97,252 @@
       </nav>
       <ul data-tab-id="movies" class="shows__list shows__list--is--active">
         <li class="shows__list__item">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiztNqfkYqSAxU0LbkGHTFnDgIQFnoECE4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60023642&usg=AOvVaw2sgadLAjk2UK5iQFJasThb&opi=89978449"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/movies/viagem.png"
-              alt="Chihiro"
-            />
-          </a>
-          <h3>Viagem de Chihiro</h3>
+          <img src="/dist/images/productions/movies/viagem.png" alt="Chihiro" />
+          <div class="shows__list__item__card">
+            <h3>Viagem de Chihiro</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiztNqfkYqSAxU0LbkGHTFnDgIQFnoECE4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60023642&usg=AOvVaw2sgadLAjk2UK5iQFJasThb&opi=89978449"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_heabkoqSAxX4gGEGHQoXM-sQFnoECG4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F70028883&usg=AOvVaw26LB7UpktFE2N8ES_o4QgY&opi=89978449"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/movies/castelo.png"
-              alt="Castelo Animado"
-            />
-          </a>
-          <h3>Castelo Animado</h3>
+          <img
+            src="/dist/images/productions/movies/castelo.png"
+            alt="Castelo Animado"
+          />
+          <div class="shows__list__item__card">
+            <h3>Castelo Animado</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_heabkoqSAxX4gGEGHQoXM-sQFnoECG4QAQ&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F70028883&usg=AOvVaw26LB7UpktFE2N8ES_o4QgY&opi=89978449"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiv7eu5koqSAxUkLrkGHS9HKEAQFnoECEQQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F28630857&usg=AOvVaw1E_2IBobQxWVQFVcy8Oisa&opi=89978449"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/movies/mononoke.png"
-              alt="Mononoke"
-            />
-          </a>
-          <h3>Pricesa Mononoke</h3>
+          <img
+            src="/dist/images/productions/movies/mononoke.png"
+            alt="Mononoke"
+          />
+          <div class="shows__list__item__card">
+            <h3>Pricesa Mononoke</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiv7eu5koqSAxUkLrkGHS9HKEAQFnoECEQQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F28630857&usg=AOvVaw1E_2IBobQxWVQFVcy8Oisa&opi=89978449"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiXjdCek4qSAxUbP7kGHXvaCasQFnoFCJMBEAE&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60032294&usg=AOvVaw3Iw8ttQs9p_zjmcXee4IEs&opi=89978449"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/movies/totoro.png"
-              alt="Totoro"
-            />
-          </a>
-          <h3>Meu Vizinho Totoro</h3>
+          <img src="/dist/images/productions/movies/totoro.png" alt="Totoro" />
+          <div class="shows__list__item__card">
+            <h3>Meu Vizinho Totoro</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiXjdCek4qSAxUbP7kGHXvaCasQFnoFCJMBEAE&url=https%3A%2F%2Fwww.netflix.com%2Fbr%2Ftitle%2F60032294&usg=AOvVaw3Iw8ttQs9p_zjmcXee4IEs&opi=89978449"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
       </ul>
       <ul data-tab-id="docs" class="shows__list">
         <li class="shows__list__item">
-          <a href="https://youtu.be/Mx8LuiJ30os" target="_blank">
-            <img
-              src="/dist/images/productions/docs/o_reino_dos_sonhos.png"
-              alt="o reino dos sonhos de das sombras"
-            />
-          </a>
-          <h3>O reino dos sonhos de e da loucura</h3>
+          <img
+            src="/dist/images/productions/docs/o_reino_dos_sonhos.png"
+            alt="o reino dos sonhos de das sombras"
+          />
+          <div class="shows__list__item__card">
+            <h3>O reino dos sonhos de e da loucura</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a href="https://youtu.be/Mx8LuiJ30os" target="_blank">
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a
-            href="https://youtu.be/eKC3_9gRrOI?si=x9ql211KzOouffa3"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/docs/sinfonia_studio_ghibli.png"
-              alt="simfonia das musicas do studio ghibli"
-            />
-          </a>
-          <h3>Sinfonia das músicas do studio ghibli</h3>
+          <img
+            src="/dist/images/productions/docs/sinfonia_studio_ghibli.png"
+            alt="simfonia das musicas do studio ghibli"
+          />
+          <div class="shows__list__item__card">
+            <h3>Sinfonia das músicas do studio ghibli</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://youtu.be/eKC3_9gRrOI?si=x9ql211KzOouffa3"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjP2tTZlIqSAxUCr5UCHSRpFEYQFnoECCkQAQ&url=https%3A%2F%2Fwww.netflix.com%2Fpt%2Ftitle%2F81946538&usg=AOvVaw2pXbT_8rxSWNx6HFXNh-NN&opi=89978449"
-            target="_blank"
-          >
-            <img
-              src="/dist/images/productions/docs/Miyazaki_e_a_garça.png"
-              alt="Hayao Miyazaki e a garça"
-            />
-          </a>
-          <h3>Hayao Miyazaki e a garça</h3>
+          <img
+            src="/dist/images/productions/docs/Miyazaki_e_a_garça.png"
+            alt="Hayao Miyazaki e a garça"
+          />
+          <div class="shows__list__item__card">
+            <h3>Hayao Miyazaki e a garça</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a
+                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjP2tTZlIqSAxUCr5UCHSRpFEYQFnoECCkQAQ&url=https%3A%2F%2Fwww.netflix.com%2Fpt%2Ftitle%2F81946538&usg=AOvVaw2pXbT_8rxSWNx6HFXNh-NN&opi=89978449"
+                target="_blank"
+              >
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a href="https://youtu.be/BX-quaGoU-0" target="_blank">
-            <img
-              src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png"
-              alt="Isao Takahata e a pricessa kaguya"
-            />
-          </a>
-          <h3>Isao Takahata e a pricessa kaguya</h3>
+          <img
+            src="/dist/images/productions/docs/Takahata_e_a_princesa_Kaguya.png"
+            alt="Isao Takahata e a pricessa kaguya"
+          />
+          <div class="shows__list__item__card">
+            <h3>Isao Takahata e a pricessa kaguya</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a href="https://youtu.be/BX-quaGoU-0" target="_blank">
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
       </ul>
       <ul data-tab-id="books" class="shows__list">
         <li class="shows__list__item">
-          <a href="https://a.co/d/aH4LwwF" target="_blank">
-            <img
-              src="/dist/images/productions/books/meu_vizinho_totoro.png"
-              alt="Meu vizinho Totoro"
-            />
-          </a>
-          <h3>Meu vizinho Totoro</h3>
+          <img
+            src="/dist/images/productions/books/meu_vizinho_totoro.png"
+            alt="Meu vizinho Totoro"
+          />
+          <div class="shows__list__item__card">
+            <h3>Meu vizinho Totoro</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a href="https://a.co/d/aH4LwwF" target="_blank">
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a href="https://a.co/d/dccVS58" target="_blank">
-            <img
-              src="/dist/images/productions/books/jornada_de_Shuna.png"
-              alt="A jornada de Shuna"
-            />
-          </a>
-          <h3>A jornada de Shuna</h3>
+          <img
+            src="/dist/images/productions/books/jornada_de_Shuna.png"
+            alt="A jornada de Shuna"
+          />
+          <div class="shows__list__item__card">
+            <h3>A jornada de Shuna</h3>
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a href="https://a.co/d/dccVS58" target="_blank">
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
-          <a href="https://a.co/d/2IVzckF" target="_blank">
-            <img
-              src="/dist/images/productions/books/castelo_animado.png"
-              alt="Castelo Animado"
-            />
-          </a>
-          <h3>Castelo Animado</h3>
+          <img
+            src="/dist/images/productions/books/castelo_animado.png"
+            alt="Castelo Animado"
+          />
+          <div class="shows__list__item__card">
+            <h3>Castelo Animado</h3>
+            >
+            <div class="shows__list__star">
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+            <button class="button">
+              <a href="https://a.co/d/2IVzckF" target="_blank">
+                clique para assistir ▶
+              </a>
+            </button>
+          </div>
         </li>
         <li class="shows__list__item">
           <a
@@ -223,68 +360,89 @@
     </section>
     <section class="backstage" id="backstage">
       <div class="backstage__container">
-        <h2>Backstory</h2>
-        <p>
-          O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata,
-          Toshio Suzuki e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do
-          Vale do Vento, no ano anterior. O estúdio lançou seu primeiro filme, O
-          Castelo no Céu, no ano seguinte. O logotipo da empresa é o Totoro, o
-          personagem do filme Meu Amigo Totoro, lançado em 1988. Com exceção de
-          sete produções, todos os filmes do estúdio foram dirigidos por Hayao
-          Miyazaki e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da
-          maioria deles. Em 2001, o Museu Ghibli, um museu dedicado as obras do
-          estúdio, foi inaugurado.
-        </p>
-
-        <br />
-
-        <p>
-          “Sempre que alguém cria algo com todo o seu coração, então essa
-          criação recebe uma alma.”
-        </p>
-
-        <h2>Direitores</h2>
-        <div class="backstage__container__imgs">
-          <img
-            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/hayao-miyazaki.png?resize=300%2C186&ssl=1"
-            alt=""
-          />
-          <img
-            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/yoshifumi-kondo-.png?resize=300%2C186&ssl=1"
-            alt=""
-          />
-          <img
-            src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2010/01/isao-takahata.png?resize=300%2C186&ssl=1"
-            alt=""
-          />
+        <div class="backstage__container__about">
+          <div class="backstage__container__about__text">
+            <h2>スタジオジブリの歴史</h2>
+            <p>
+              O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao
+              Takahata, Toshio Suzuki e Yasuyoshi Tokuma, logo após o sucesso de
+              Nausicaä do Vale do Vento, no ano anterior. O estúdio lançou seu
+              primeiro filme, O Castelo no Céu, no ano seguinte. O logotipo da
+              empresa é o Totoro, o personagem do filme Meu Amigo Totoro,
+              lançado em 1988. Com exceção de sete produções, todos os filmes do
+              estúdio foram dirigidos por Hayao Miyazaki e Isao Takahata. Toshio
+              Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, o
+              Museu Ghibli, um museu dedicado as obras do estúdio, foi
+              inaugurado.
+            </p>
+          </div>
+          <img src="./dist/images/quebra-linha.png" alt="" />
+          <!-- <h2>Backstory</h2> -->
         </div>
-
-        <br />
-
-        <h2>Premiações</h2>
+        <h2 style="margin-top: 1.5em">Diretores Importantes:</h2>
+        <div class="backstage__container__dir">
+          <div class="backstage__container__dir__imgs">
+            <a
+              href="https://studioghibli.com.br/hayao-miyazaki/"
+              target="_blank"
+            >
+              <img src="./dist/images/Miyazaki (1).png" alt="Miyazaki" />
+            </a>
+            <h3>Hayao Miyazaki</h3>
+            <p>Diretor, animador e cofundador.</p>
+          </div>
+          <div class="backstage__container__dir__imgs">
+            <a
+              href="https://studioghibli.com.br/isao-takahata/"
+              target="_blank"
+            >
+              <img src="./dist/images/Goro.png" alt="Isao Takahata" />
+            </a>
+            <h3>Isao Takahata</h3>
+            <p>Diretor, roteirista.</p>
+          </div>
+          <div class="backstage__container__dir__imgs">
+            <a
+              href="https://ghibli.fandom.com/wiki/Gorō_Miyazaki"
+              target="_blank"
+            >
+              <img src="./dist/images/Miyazaki (3).png" alt="Goro Miyazaki" />
+            </a>
+            <h3>Gorō Miyazaki</h3>
+            <p>Diretor.</p>
+          </div>
+        </div>
+        <p class="backstage__container__p">
+          “Sempre que alguém cria algo com todo o seu coração, então essa
+          criação recebe uma alma.” by Miyazaki
+        </p>
       </div>
     </section>
-    <section class="contact" id="contact"></section>
-    <footer class="footer" id="footer">
-      <div class="footer__container">
-        <div class="footer__container__div">
-          <div class="footer__container__div__form">
-            <h3>Assine e receba novidades:</h3>
+    <section></section>
+    <section id="contact" class="contact">
+      <div class="contact__container">
+        <h2>Nossos Contatos</h2>
+        <div class="contact__container__methods">
+          <div class="contact__container__methods__form">
+            <h3>Assine para receber novidades!</h3>
             <form>
-              <label for="inputname"></label>
-              <input
-                type="text"
-                id="inputname"
-                placeholder="Seu nome"
-                required
-              />
+              <input type="text" placeholder="Seu Nome" required />
+              <input type="email" placeholder="Seu Email" required />
+              <input type="tel" placeholder="Seu Telefone (opcional)" />
+              <p>
+                Ao criar uma conta, você concorda com nossos
+                <a href="#">Termos e privacidade</a>.
+              </p>
+              <button type="submit">Assinar</button>
             </form>
           </div>
-          <div class="footer__container__div__"></div>
+          <div class="contact__container__methods__maps">
+            <h3>Visite nosso museu</h3>
+            
+          </div>
         </div>
       </div>
-    </footer>
-
+    </section>
     <script src="./dist/js/main.js"></script>
   </body>
 </html>

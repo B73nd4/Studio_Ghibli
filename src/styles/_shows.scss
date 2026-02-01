@@ -4,12 +4,19 @@
     padding: 2vw 9vw;
     min-height: 40.1vw;
 
+    @media (max-width:768px) {
+        padding: 5vw 9vw 11vw 9vw;
+    }
+
     &__list{
         display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 5px;
         margin-top: 44px;
 
+            button {
+                text-align: center;
+            }
         @media(max-width:768px){
             grid-template-columns: 1fr 1fr;
         }
@@ -18,10 +25,47 @@
             display: grid;
         }
 
+        &__star{
+            color: #e4bc16;
+        }
+
         &__item{
+        padding: 10px;
+        border-radius: 10px;
+
+        transition: box-shadow .4s ease, transform .4s ease;
+
+        &:hover{
+            box-shadow:
+                    0 0 0 6px rgba(255, 255, 255, 0.15),
+                    0 18px 35px rgba(0, 0, 0, 0.35);
+                transform: translateY(-4px) scale(1.03);
+        }
+
+        button{
+            margin-bottom: 10px;
+
+            @media (max-width: 768px) {
+                padding: 5px;
+
+                a{
+                    font-size: 13px;
+                }
+            }
+        }
+
             img{
                 max-width: 100%;
                 border-radius: 10px;
+            }
+
+            &__card{
+                background-color: #FBF8FD;
+                text-align: center;
+
+                h3{
+                    font-size: 23px;
+                }
             }
         }
     }
@@ -31,7 +75,8 @@
         justify-content: center;
 
         &__button{
-            color: variaveis.$corBodyHeader;
+            font-family: variaveis.$fontBold;
+            color: variaveis.$corSecundaria;
             font-size: 20px;
             border: none;
             padding-bottom: 5px;
@@ -41,8 +86,12 @@
             cursor: pointer;
             border-bottom: 5px solid transparent;
 
+            @media (max-width:768px) {
+                padding-left: 10px;
+            }
+
             &--is--active{
-                border-bottom: 5px solid variaveis.$corBodyHeader;
+                border-bottom: 5px solid variaveis.$corSecundaria;
             }
         }
     }
