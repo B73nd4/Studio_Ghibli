@@ -423,9 +423,21 @@
       <div class="contact__container">
         <h2>Nossos Contatos</h2>
         <div class="contact__container__methods">
+          <div class="contact__container__methods__maps">
+            <h3>Visite nosso museu:</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254.72418001890776!2d139.57039901534037!3d35.696249195366995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee34e5038c2d%3A0x4de155903f849205!2sMuseu%20Ghibli!5e1!3m2!1spt-BR!2sbr!4v1769916251086!5m2!1spt-BR!2sbr"
+              width="320"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <address>Mitaka, Tóquio, Japão</address>
+          </div>
           <div class="contact__container__methods__form">
             <h3>Assine para receber novidades!</h3>
-            <form>
+            <form class="contact__container__methods__form__f">
               <input type="text" placeholder="Seu Nome" required />
               <input type="email" placeholder="Seu Email" required />
               <input type="tel" placeholder="Seu Telefone (opcional)" />
@@ -433,16 +445,70 @@
                 Ao criar uma conta, você concorda com nossos
                 <a href="#">Termos e privacidade</a>.
               </p>
-              <button type="submit">Assinar</button>
+              <button class="button" type="submit">Assinar</button>
             </form>
           </div>
-          <div class="contact__container__methods__maps">
-            <h3>Visite nosso museu</h3>
-            
+          <div class="contact__container__methods__social">
+            <div>
+              <h3>Nossa Redes Sociais:</h3>
+              <ul class="contact__container__methods__social__links">
+                <li class="contact__container__methods__social__links__itens">
+                  <a target="_blank" href="https://www.facebook.com/GhibliUSA">
+                    <img
+                      src="./dist/images/icons/facebook.png"
+                      alt="facebook"
+                    />
+                  </a>
+                </li>
+                <li class="contact__container__methods__social__links__itens">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/ghibliusa?igsh=MXhncHNmaDg4dDJ5NA=="
+                  >
+                    <img
+                      src="./dist/images/icons/Insta.png"
+                      alt="Instagram logo"
+                    />
+                  </a>
+                </li>
+                <li class="contact__container__methods__social__links__itens">
+                  <a
+                    target="_blank"
+                    href="http://www.youtube.com/@StudioGhibliBrasil"
+                  >
+                    <img src="./dist/images/icons/youtube.png" alt="YouTube" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style="margin-top: 20px">
+              <h4>Escute nossa playlist oficial no Spotify!</h4>
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7GTqMQDhOum?utm_source=generator&theme=0"
+                width="85%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer__f">
+      <p>&copy;スタジオジブリ | Studio Ghibli - Todos os direitos sobre Studio Ghibli&trade; pertencem á <a target="_blank" href="https://www.ghibli.jp/misc/">STUDIO GHIBLI CO.LTD</a>.</p>
+    </footer>
+
     <script src="./dist/js/main.js"></script>
   </body>
 </html>

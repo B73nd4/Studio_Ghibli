@@ -1,0 +1,16 @@
+@use 'variaveis';
+
+.footer__f{
+    text-align: center;
+    padding: 5px;
+    background-color: variaveis.$corFooter;
+
+    p{
+        font-size: 14px;
+        color: gray;
+
+        a{
+            color: variaveis.$corBodyHeader;
+        }
+    }
+}
